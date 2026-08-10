@@ -17,6 +17,7 @@ concurrency:
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -35,9 +36,11 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Gündem radarı ve doğrulama
-        run: python RADAR_UPDATE.py
+        timeout-minutes: 5
+        run: python -u RADAR_UPDATE.py
 
       - name: Güncellenen veriyi repo'ya kaydet
+        if: success()
         run: |
           git config user.name "gundem-defteri-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -50,6 +53,7 @@ jobs:
           fi
 
       - name: Pages için site klasörünü hazırla
+        if: success()
         run: |
           rm -rf _site
           mkdir -p _site
@@ -58,13 +62,16 @@ jobs:
           touch _site/.nojekyll
 
       - name: GitHub Pages'i yapılandır
+        if: success()
         uses: actions/configure-pages@v5
 
       - name: Site artifact'ını yükle
+        if: success()
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
       - name: GitHub Pages'e yayınla
+        if: success()
         id: deployment
         uses: actions/deploy-pages@v4
