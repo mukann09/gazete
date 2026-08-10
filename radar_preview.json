@@ -1,117 +1,90 @@
 {
-  "updatedAt": "2026-08-10T14:09:08+00:00",
-  "count": 14,
+  "updatedAt": "2026-08-10T16:38:19+00:00",
+  "count": 10,
   "items": [
     {
-      "title": "Özgür Özel'den 'çerçeve yasa' açıklaması: Ben ve yönetici arkadaşlarım 'evet' diyeceğiz",
+      "title": "Meclis'te tarihi oturum! Özgür Özel'in 'çerçeve yasa' konuşmasının tam metni...",
       "publishers": [
+        "Cumhuriyet",
         "birgun.net",
-        "Halk TV",
-        "Sözcü Gazetesi",
-        "Cumhuriyet",
-        "Bianet",
-        "Onedio"
-      ],
-      "image": "images/radar-ozgur-ozel-1b12f35.jpg"
-    },
-    {
-      "title": "Özgür Özel kürsüden açıkladı: Milletvekillerini serbest bıraktı, kendisi evet diyecek",
-      "publishers": [
         "Sözcü Gazetesi",
         "Bianet",
-        "Evrensel.net",
-        "Dünya Gazetesi",
-        "BBC",
-        "instagram.com"
+        "onedio.com"
       ],
-      "image": "images/radar-yeni-parti-4333f85.png"
+      "image": "images/radar-ozgur-ozel-45227e9.jpg"
     },
     {
-      "title": "Son Dakika... 'Çerçeve yasa' Genel Kurul'da: Toplantı başladı",
+      "title": "YENİ Parti milletvekilleri 'çerçeve yasa' kararlarını bir bir açıklıyor: Kim ne dedi?",
       "publishers": [
         "Cumhuriyet",
-        "Bianet",
-        "Onedio",
+        "Sözcü Gazetesi",
         "BBC",
-        "Independent Türkçe"
+        "Bianet",
+        "Ekonomim"
       ],
-      "image": "images/radar-cerceve-yasa-ed2f947.jpg"
+      "image": "images/radar-yeni-parti-e1d5f2a.jpg"
     },
     {
-      "title": "İYİ Parti Meclis'e bayraklarla girdi!",
+      "title": "Çerçeve yasa TBMM Genel Kurulu'nda görüşülüyor",
       "publishers": [
-        "Sözcü Gazetesi",
-        "Bianet",
-        "Karabük Net Haber",
-        "Bayburt Haber",
         "BBC",
+        "Ekonomim",
+        "Bianet",
         "instagram.com"
       ],
-      "image": "images/radar-iyi-parti-2125813.jpg"
+      "image": "images/radar-iyi-parti-dc21018.jpg"
     },
     {
-      "title": "Galatasaray maçı öncesi dev anlaşma: Çorum FK durdurulamıyor",
+      "title": "Galatasaray'dan ayrılacağı konuşulurken Okan Buruk'un gözüne girdi! Yeni sözleşme imzalanıyor",
       "publishers": [
-        "Halk TV",
+        "NTVSpor",
+        "Fanatik",
         "Fotomaç",
         "Odatv",
         "A Spor"
       ],
-      "image": "images/radar-galatasaray-57ec408.jpg"
-    },
-    {
-      "title": "Arda Güler astronomik teklifi kabul etti! Fenerbahçe çuvalla para kazanacak",
-      "publishers": [
-        "Sözcü Gazetesi",
-        "ntvspor.net",
-        "Hürriyet",
-        "GZT",
-        "Mynet",
-        "Fanatik"
-      ],
-      "image": "images/radar-arda-guler-5110dd3.png"
-    },
-    {
-      "title": "Galatasaray'da Victor Osimhen için dev teklif!",
-      "publishers": [
-        "Bursada Bugün",
-        "Habervakti",
-        "Ajansspor",
-        "Hürriyet",
-        "beinsports.com.tr"
-      ],
-      "image": "images/radar-victor-osimhen-cf5d96e.webp"
-    },
-    {
-      "title": "Beşiktaş'ta Dusan Vlahovic için Italiano devrede: Yapılan teklif ortaya çıktı",
-      "publishers": [
-        "Evrensel.net",
-        "Fotomaç",
-        "Sporx.com",
-        "Hürriyet",
-        "Milliyet",
-        "beinsports.com.tr"
-      ],
-      "image": "images/radar-dusan-vlahovic-0eaec99.jpg"
+      "image": "images/radar-galatasaray-2376a4e.jpg"
     },
     {
       "title": "house of the dragon",
       "publishers": [
-        "mansetiz.com",
         "Sinetopya",
         "Beyazperde"
       ],
-      "image": "images/radar-house-of-the-dragon-4665a6f.png"
+      "image": "images/radar-house-of-the-dragon-1cee109.jpg"
     },
     {
-      "title": "Turkish President Erdoğan welcomes Austrian chancellor",
+      "title": "Beşiktaş'ta Dusan Vlahovic için Italiano devrede: Yapılan teklif ortaya çıktı",
       "publishers": [
-        "A News",
-        "İhlas Haber Ajansı",
-        "Haberler",
-        "Hürriyet"
+        "evrensel.net",
+        "Fotomaç",
+        "Sporx.com",
+        "hurriyet.com.tr",
+        "goal.com",
+        "beinsports.com.tr"
       ],
-      "image": "images/radar-recep-tayyip-erdogan-fe391b9.jpg"
+      "image": "images/radar-dusan-vlahovic-9a40473.jpg"
+    },
+    {
+      "title": "Cumhurbaşkanı Erdoğan, Avusturya Şansölyesi Stocker ile ortak basın toplantısı düzenledi",
+      "publishers": [
+        "dha.com.tr",
+        "İhlas Haber Ajansı",
+        "Haber Dairesi"
+      ],
+      "image": "images/radar-recep-tayyip-erdogan-e94e7cf.jpg"
+    },
+    {
+      "title": "Galatasaray'dan ayrılacağı konuşulurken Okan Buruk'un gözüne girdi! Yeni sözleşme imzalanıyor",
+      "publishers": [
+        "NTVSpor",
+        "Yeniçağ Gazetesi",
+        "NationalTurk",
+        "Yeni Mesaj",
+        "Son Dakika",
+        "milliyet.com.tr"
+      ],
+      "image": "images/radar-okan-buruk-29c7b77.jpg"
     },
     {
       "title": "Son dakika... Galatasaray muhabiri Burhan Can Terzi gözaltına alındı",
@@ -123,39 +96,15 @@
       "image": "images/radar-burhan-can-terzi-e0420f2.png"
     },
     {
-      "title": "İki yılda kaç CHP'li belediye başkanı tutuklandı, kaçı görevden alındı?",
+      "title": "Dilek İmamoğlu'ndan çerçeve yasa öncesi dikkat çeken paylaşım",
       "publishers": [
-        "Diken",
         "birgun.net",
         "Halk TV",
-        "nationalturk.com",
+        "Yeniçağ Gazetesi",
+        "NationalTurk",
         "Notbir"
       ],
-      "image": "images/radar-ekrem-imamoglu-bd87783.jpg"
-    },
-    {
-      "title": "Mansur Yavaş’tan Çerçeve Yasa açıklaması: “Demokratikleşmeyi yalnızca belirli bir mesele üzerinden konuşamayız”",
-      "publishers": [
-        "Medyascope",
-        "Sözcü Gazetesi",
-        "İlke TV",
-        "Kısa Dalga",
-        "Yetkin Report",
-        "Rudaw"
-      ],
-      "image": "images/radar-mansur-yavas-745449a.jpg"
-    },
-    {
-      "title": "Son Dakika | Galatasaray tribün lideri Sebahattin Şirin'in evinden çıkan paranın miktarı belli oldu",
-      "publishers": [
-        "Halk TV",
-        "NTV Haber",
-        "BBC",
-        "GZT",
-        "Onedio",
-        "Hürriyet"
-      ],
-      "image": "images/radar-sebahattin-sirin-85b6941.jpg"
+      "image": "images/radar-ekrem-imamoglu-20c9f09.jpg"
     }
   ]
 }
