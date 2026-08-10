@@ -381,45 +381,409 @@ window.NEWS_DATA = {
           ]
         }
       ]
+    },
+    {
+      "id": "ozgur-ozel-8b3ca8d",
+      "category": "Gündem",
+      "date": "10 Ağustos 2026 · 15:56",
+      "title": "Meclis'te tarihi oturum! Özgür Özel'in 'çerçeve yasa' konuşmasının tam metni...",
+      "lead": "YENİ Parti Genel Başkanı Özgür Özel, TBMM Genel Kurulu’nda “Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun Teklifi”ne ilişkin konuştu. Sürecin yönetiliş biçimini ve teklifin eksiklerini sert sözlerle eleştiren Özel, buna karşın “barışın önünde durmayacağız” diyerek yasaya “evet” diyeceğini açıkladı. YENİ Parti milletvekilleri ise seçim bölgelerinin yönelimine göre karar verecek.",
+      "hero": {
+        "src": "images/radar-ozgur-ozel-8b3ca8d.jpg",
+        "alt": "özgür özel",
+        "caption": "Fotoğraf: ilgili haber kaynağı."
+      },
+      "sections": [
+        {
+          "type": "summary_cards",
+          "items": [
+            {
+              "label": "Son durum",
+              "text": "YENİ Parti Genel Başkanı Özgür Özel, TBMM Genel Kurulu’nda “Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun Teklifi”ne ilişkin konuştu. Sürecin yönetiliş biçimini ve teklifin eksiklerini sert sözlerle eleştiren Özel, buna karşın “barışın önünde durmayacağız” diyerek yasaya “evet” diyeceğini açıkladı. YENİ Parti milletvekilleri ise seçim bölgelerinin yönelimine göre karar verecek.",
+              "tone": "yellow"
+            },
+            {
+              "label": "Öne çıkan ayrıntı",
+              "text": "Özgür Özel'den 'çerçeve yasa' açıklaması: Ben ve yönetici arkadaşlarım 'evet' diyeceğiz",
+              "tone": "green"
+            },
+            {
+              "label": "Yayın zamanı",
+              "text": "10 Ağustos 2026 · 15:56",
+              "tone": "blue"
+            }
+          ]
+        },
+        {
+          "type": "highlight_paragraph",
+          "heading": "Ayrıntılar",
+          "paragraphs": [
+            {
+              "text": "YENİ Parti Genel Başkanı Özgür Özel, TBMM Genel Kurulu’nda “Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun Teklifi”ne ilişkin konuştu. Sürecin yönetiliş biçimini ve teklifin eksiklerini sert sözlerle eleştiren Özel, buna karşın “barışın önünde durmayacağız” diyerek yasaya “evet” diyeceğini açıkladı. YENİ Parti milletvekilleri ise seçim bölgelerinin yönelimine göre karar verecek.",
+              "highlights": []
+            }
+          ]
+        },
+        {
+          "type": "flow",
+          "heading": "Haberlerde öne çıkanlar",
+          "items": [
+            {
+              "text": "14:39 · birgun.net — Özgür Özel'den 'çerçeve yasa' açıklaması: Ben ve yönetici arkadaşlarım 'evet' diyeceğiz",
+              "tone": "blue"
+            },
+            {
+              "text": "15:55 · Cumhuriyet — Meclis'te tarihi oturum! Özgür Özel'in 'çerçeve yasa' konuşmasının tam metni...",
+              "tone": "yellow"
+            },
+            {
+              "text": "15:56 · Sözcü Gazetesi — Özgür Özel kürsüden indi; YENİ Parti vekilleri oylarını tek tek açıklıyor",
+              "tone": "green"
+            }
+          ]
+        },
+        {
+          "type": "key_takeaway",
+          "title": "Meselenin özü",
+          "text": "YENİ Parti Genel Başkanı Özgür Özel, TBMM Genel Kurulu’nda “Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun Teklifi”ne ilişkin konuştu. Sürecin yönetiliş biçimini ve teklifin eksiklerini sert sözlerle eleştiren Özel, buna karşın “barışın önünde durmayacağız” diyerek yasaya “evet” diyeceğini açıkladı. YENİ Parti milletvekilleri ise seçim bölgelerinin yönelimine göre karar verecek."
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "label": "Cumhuriyet — Meclis'te tarihi oturum! Özgür Özel'in 'çerçeve yasa' konuşmasının tam metni...",
+              "url": "https://www.cumhuriyet.com.tr/siyaset/meclis-te-tarihi-oturum-ozgur-ozel-in-cerceve-yasa-konusmasinin-tam-metni-2527992"
+            },
+            {
+              "label": "birgun.net — Özgür Özel'den 'çerçeve yasa' açıklaması: Ben ve yönetici arkadaşlarım 'evet' diyeceğiz",
+              "url": "https://www.birgun.net/haber/ozgur-ozel-den-cerceve-yasa-aciklamasi-ben-ve-yonetici-arkadaslarim-evet-diyecegiz-728569"
+            },
+            {
+              "label": "Sözcü Gazetesi — Özgür Özel kürsüden indi; YENİ Parti vekilleri oylarını tek tek açıklıyor",
+              "url": "https://www.sozcu.com.tr/ozgur-ozel-kursuden-indi-yeni-parti-vekilleri-oylarini-tek-tek-acikliyor-p344077"
+            }
+          ]
+        }
+      ],
+      "generatedBy": "radar-verified",
+      "verification": {
+        "publisherCount": 3,
+        "publishers": [
+          "Cumhuriyet",
+          "birgun.net",
+          "Sözcü Gazetesi"
+        ]
+      }
+    },
+    {
+      "id": "yeni-parti-bbf1348",
+      "category": "Gündem",
+      "date": "10 Ağustos 2026 · 18:59",
+      "title": "Özgür Özel kürsüden indi; YENİ Parti vekilleri oylarını tek tek açıklıyor",
+      "lead": "YENİ Parti Genel Başkanı Özgür Özel’in milletvekillerinin seçim bölgelerindeki yurttaşların tutumuna göre oy kullanacağını açıklamasının ardından, şu ana kadar en az 31 milletvekili çerçeve yasaya ‘hayır’ diyeceğini duyurdu.",
+      "hero": {
+        "src": "images/radar-yeni-parti-bbf1348.png",
+        "alt": "yeni parti",
+        "caption": "Fotoğraf: ilgili haber kaynağı."
+      },
+      "sections": [
+        {
+          "type": "summary_cards",
+          "items": [
+            {
+              "label": "Son durum",
+              "text": "YENİ Parti Genel Başkanı Özgür Özel’in milletvekillerinin seçim bölgelerindeki yurttaşların tutumuna göre oy kullanacağını açıklamasının ardından, şu ana kadar en az 31 milletvekili çerçeve yasaya ‘hayır’ diyeceğini duyurdu.",
+              "tone": "yellow"
+            },
+            {
+              "label": "Öne çıkan ayrıntı",
+              "text": "'Çerçeve yasa': 'Hayır' oyu kullanacağını açıklayan Yeni Parti milletvekilleri kimler?",
+              "tone": "green"
+            },
+            {
+              "label": "Yayın zamanı",
+              "text": "10 Ağustos 2026 · 18:59",
+              "tone": "blue"
+            }
+          ]
+        },
+        {
+          "type": "highlight_paragraph",
+          "heading": "Ayrıntılar",
+          "paragraphs": [
+            {
+              "text": "YENİ Parti Genel Başkanı Özgür Özel’in milletvekillerinin seçim bölgelerindeki yurttaşların tutumuna göre oy kullanacağını açıklamasının ardından, şu ana kadar en az 31 milletvekili çerçeve yasaya ‘hayır’ diyeceğini duyurdu.",
+              "highlights": []
+            }
+          ]
+        },
+        {
+          "type": "flow",
+          "heading": "Haberlerde öne çıkanlar",
+          "items": [
+            {
+              "text": "15:56 · Sözcü Gazetesi — Özgür Özel kürsüden indi; YENİ Parti vekilleri oylarını tek tek açıklıyor",
+              "tone": "blue"
+            },
+            {
+              "text": "17:25 · Bianet — YENİ Parti’de hangi milletvekilleri çerçeve yasaya ‘hayır’ diyecek?",
+              "tone": "yellow"
+            },
+            {
+              "text": "18:59 · BBC — 'Çerçeve yasa': 'Hayır' oyu kullanacağını açıklayan Yeni Parti milletvekilleri kimler?",
+              "tone": "green"
+            }
+          ]
+        },
+        {
+          "type": "key_takeaway",
+          "title": "Meselenin özü",
+          "text": "YENİ Parti Genel Başkanı Özgür Özel’in milletvekillerinin seçim bölgelerindeki yurttaşların tutumuna göre oy kullanacağını açıklamasının ardından, şu ana kadar en az 31 milletvekili çerçeve yasaya ‘hayır’ diyeceğini duyurdu."
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "label": "Sözcü Gazetesi — Özgür Özel kürsüden indi; YENİ Parti vekilleri oylarını tek tek açıklıyor",
+              "url": "https://www.sozcu.com.tr/ozgur-ozel-kursuden-indi-yeni-parti-vekilleri-oylarini-tek-tek-acikliyor-p344077"
+            },
+            {
+              "label": "BBC — 'Çerçeve yasa': 'Hayır' oyu kullanacağını açıklayan Yeni Parti milletvekilleri kimler?",
+              "url": "https://www.bbc.com/turkce/articles/cqx7l9e5q7yo"
+            },
+            {
+              "label": "Bianet — YENİ Parti’de hangi milletvekilleri çerçeve yasaya ‘hayır’ diyecek?",
+              "url": "https://bianet.org/haber/yeni-partide-hangi-milletvekilleri-cerceve-yasaya-hayir-diyecek-322421"
+            }
+          ]
+        }
+      ],
+      "generatedBy": "radar-verified",
+      "verification": {
+        "publisherCount": 3,
+        "publishers": [
+          "Sözcü Gazetesi",
+          "BBC",
+          "Bianet"
+        ]
+      }
+    },
+    {
+      "id": "iyi-parti-bdc50ef",
+      "category": "Gündem",
+      "date": "10 Ağustos 2026 · 18:09",
+      "title": "Çerçeve yasa TBMM Genel Kurulu'nda görüşülüyor",
+      "lead": "\"Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun Teklifi\" TBMM Genel Kurulu'nda bugün görüşülüyor. MHP Başkan Yardımcısı Feti Yıldız, teklifin genel kuruldan nitelikli çoğunluk ile geçmesini beklediklerini söyledi.",
+      "hero": {
+        "src": "images/radar-iyi-parti-bdc50ef.jpg",
+        "alt": "iyi parti",
+        "caption": "Fotoğraf: ilgili haber kaynağı."
+      },
+      "sections": [
+        {
+          "type": "summary_cards",
+          "items": [
+            {
+              "label": "Son durum",
+              "text": "\"Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun Teklifi\" TBMM Genel Kurulu'nda bugün görüşülüyor. MHP Başkan Yardımcısı Feti Yıldız, teklifin genel kuruldan nitelikli çoğunluk ile geçmesini beklediklerini söyledi.",
+              "tone": "yellow"
+            },
+            {
+              "label": "Öne çıkan ayrıntı",
+              "text": "Dervişoğlu: Hayır diyeceğiz, tarihin doğru yerinde duracağız",
+              "tone": "green"
+            },
+            {
+              "label": "Yayın zamanı",
+              "text": "10 Ağustos 2026 · 18:09",
+              "tone": "blue"
+            }
+          ]
+        },
+        {
+          "type": "highlight_paragraph",
+          "heading": "Ayrıntılar",
+          "paragraphs": [
+            {
+              "text": "\"Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun Teklifi\" TBMM Genel Kurulu'nda bugün görüşülüyor. MHP Başkan Yardımcısı Feti Yıldız, teklifin genel kuruldan nitelikli çoğunluk ile geçmesini beklediklerini söyledi.",
+              "highlights": []
+            }
+          ]
+        },
+        {
+          "type": "flow",
+          "heading": "Haberlerde öne çıkanlar",
+          "items": [
+            {
+              "text": "15:30 · Bianet — ‘Çerçeve yasa’ teklifine Meclis’te hangi parti nasıl oy verecek?",
+              "tone": "blue"
+            },
+            {
+              "text": "17:36 · BBC — Çerçeve yasa TBMM Genel Kurulu'nda görüşülüyor",
+              "tone": "yellow"
+            },
+            {
+              "text": "18:09 · Ekonomim — Dervişoğlu: Hayır diyeceğiz, tarihin doğru yerinde duracağız",
+              "tone": "green"
+            }
+          ]
+        },
+        {
+          "type": "key_takeaway",
+          "title": "Meselenin özü",
+          "text": "\"Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun Teklifi\" TBMM Genel Kurulu'nda bugün görüşülüyor. MHP Başkan Yardımcısı Feti Yıldız, teklifin genel kuruldan nitelikli çoğunluk ile geçmesini beklediklerini söyledi."
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "label": "BBC — Çerçeve yasa TBMM Genel Kurulu'nda görüşülüyor",
+              "url": "https://www.bbc.com/turkce/articles/cwym8yv19rxo"
+            },
+            {
+              "label": "Ekonomim — Dervişoğlu: Hayır diyeceğiz, tarihin doğru yerinde duracağız",
+              "url": "https://www.ekonomim.com/gundem/iyi-parti-genel-baskani-dervisoglu-hayir-diyecegiz-tarihin-dogru-yerinde-duracagiz-haberi-911298"
+            },
+            {
+              "label": "Bianet — ‘Çerçeve yasa’ teklifine Meclis’te hangi parti nasıl oy verecek?",
+              "url": "https://bianet.org/haber/cerceve-yasa-teklifine-mecliste-hangi-parti-nasil-oy-verecek-322411"
+            }
+          ]
+        }
+      ],
+      "generatedBy": "radar-verified",
+      "verification": {
+        "publisherCount": 3,
+        "publishers": [
+          "BBC",
+          "Ekonomim",
+          "Bianet"
+        ]
+      }
+    },
+    {
+      "id": "galatasaray-8a0208e",
+      "category": "Gündem",
+      "date": "10 Ağustos 2026 · 16:11",
+      "title": "Galatasaray'dan ayrılacağı konuşulurken Okan Buruk'un gözüne girdi! Yeni sözleşme imzalanıyor",
+      "lead": "Yaz transfer dönemini durgun geçiren Galatasaray, hücuma bir takviye yapmayı planlıyor. Birçok önemli isimle temas halinde sarı kırmızılılar, flaş bir yıldız için devreye girdi. Cimbom’un son saatlerde yaptığı bu hamleyi ise İtalyan medyası duyurdu. İşte detaylar... GS SPOR HABERİ",
+      "hero": {
+        "src": "images/radar-galatasaray-8a0208e.jpg",
+        "alt": "galatasaray",
+        "caption": "Fotoğraf: ilgili haber kaynağı."
+      },
+      "sections": [
+        {
+          "type": "summary_cards",
+          "items": [
+            {
+              "label": "Son durum",
+              "text": "Yaz transfer dönemini durgun geçiren Galatasaray, hücuma bir takviye yapmayı planlıyor. Birçok önemli isimle temas halinde sarı kırmızılılar, flaş bir yıldız için devreye girdi. Cimbom’un son saatlerde yaptığı bu hamleyi ise İtalyan medyası duyurdu. İşte detaylar... GS SPOR HABERİ",
+              "tone": "yellow"
+            },
+            {
+              "label": "Öne çıkan ayrıntı",
+              "text": "İtalyan basınından flaş iddia! Beşiktaş’ın gündemindeki yıldıza Galatasaray kancası - Son dakika Galatasaray haberleri",
+              "tone": "green"
+            },
+            {
+              "label": "Yayın zamanı",
+              "text": "10 Ağustos 2026 · 16:11",
+              "tone": "blue"
+            }
+          ]
+        },
+        {
+          "type": "highlight_paragraph",
+          "heading": "Ayrıntılar",
+          "paragraphs": [
+            {
+              "text": "Yaz transfer dönemini durgun geçiren Galatasaray, hücuma bir takviye yapmayı planlıyor. Birçok önemli isimle temas halinde sarı kırmızılılar, flaş bir yıldız için devreye girdi. Cimbom’un son saatlerde yaptığı bu hamleyi ise İtalyan medyası duyurdu. İşte detaylar... GS SPOR HABERİ",
+              "highlights": []
+            }
+          ]
+        },
+        {
+          "type": "flow",
+          "heading": "Haberlerde öne çıkanlar",
+          "items": [
+            {
+              "text": "15:04 · NTVSpor — Galatasaray'dan ayrılacağı konuşulurken Okan Buruk'un gözüne girdi! Yeni sözleşme imzalanıyor",
+              "tone": "blue"
+            },
+            {
+              "text": "16:11 · Fotomaç — İtalyan basınından flaş iddia! Beşiktaş’ın gündemindeki yıldıza Galatasaray kancası - Son dakika Galatasaray haberleri",
+              "tone": "yellow"
+            }
+          ]
+        },
+        {
+          "type": "key_takeaway",
+          "title": "Meselenin özü",
+          "text": "Yaz transfer dönemini durgun geçiren Galatasaray, hücuma bir takviye yapmayı planlıyor. Birçok önemli isimle temas halinde sarı kırmızılılar, flaş bir yıldız için devreye girdi. Cimbom’un son saatlerde yaptığı bu hamleyi ise İtalyan medyası duyurdu. İşte detaylar... GS SPOR HABERİ"
+        },
+        {
+          "type": "sources",
+          "items": [
+            {
+              "label": "NTVSpor — Galatasaray'dan ayrılacağı konuşulurken Okan Buruk'un gözüne girdi! Yeni sözleşme imzalanıyor",
+              "url": "https://www.ntvspor.net/foto-galeri/galatasaraydan-ayrilacagi-konusulurken-okan-burukun-gozune-girdi-yeni-sozlesme-imzalaniyor-427630"
+            },
+            {
+              "label": "Fotomaç — İtalyan basınından flaş iddia! Beşiktaş’ın gündemindeki yıldıza Galatasaray kancası - Son dakika Galatasaray haberleri",
+              "url": "https://www.fotomac.com.tr/galatasaray/2026/08/10/galatasaraydan-besiktasa-transfer-calimi-italyan-basini-duyurdu"
+            }
+          ]
+        }
+      ],
+      "generatedBy": "radar-verified",
+      "verification": {
+        "publisherCount": 2,
+        "publishers": [
+          "NTVSpor",
+          "Fotomaç"
+        ]
+      }
     }
   ],
   "feed": [
     {
-      "id": "mansur-yavas-cerceve-yasa",
-      "articleId": "mansur-yavas-cerceve-yasa",
+      "id": "ozgur-ozel-8b3ca8d",
+      "articleId": "ozgur-ozel-8b3ca8d",
       "category": "GÜNDEM",
-      "title": "Yavaş’tan “çerçeve yasa” için toplumsal mutabakat çağrısı",
-      "spot": "Ankara Büyükşehir Belediye Başkanı Mansur Yavaş, Türkiye’nin sorunlarının demokratik yollarla çözülmesini desteklediğini belirtirken, kalıcı barışın yalnızca bir kanun çıkarmakla kurulamayacağını söyledi. Adalet, hukuk, güven ve toplumsal mutabakatı sürecin temel şartları arasında saydı.",
-      "image": "images/mansur-yavas.jpg",
+      "title": "Meclis'te tarihi oturum! Özgür Özel'in 'çerçeve yasa' konuşmasının tam metni...",
+      "spot": "YENİ Parti Genel Başkanı Özgür Özel, TBMM Genel Kurulu’nda “Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun Teklifi”ne ilişkin konuştu. Sürecin yönetiliş biçimini ve teklifin eksiklerini sert sözlerle eleştiren Özel, buna karşın “barışın önünde durmayacağız” diyerek yasaya “evet” diyeceğini açıkladı. YENİ Parti milletvekilleri ise seçim bölgelerinin yönelimine göre karar verecek.",
+      "image": "images/radar-ozgur-ozel-8b3ca8d.jpg",
       "ready": true
     },
     {
-      "id": "ogrenci-affi-2026",
-      "articleId": "ogrenci-affi-2026",
-      "category": "EĞİTİM",
-      "title": "Öğrenci affı yürürlükte: Başvuru için dört aylık süre başladı",
-      "spot": "Yükseköğretimde öğrenci affına ilişkin düzenleme yürürlüğe girdi. Belirli koşulları taşıyan eski öğrenciler yeniden başvuru hakkı kazanıyor; ancak dönüş otomatik gerçekleşmiyor.",
-      "image": "images/ogrenci-affi.jpg",
-      "ready": true
-    },
-    {
-      "id": "plastik-atik-ithalat-denetim",
-      "articleId": "plastik-atik-ithalat-denetim",
-      "category": "ÇEVRE",
-      "title": "Plastik atık tartışması büyüyor: İthalat ve denetim yeniden gündemde",
-      "spot": "Türkiye'nin plastik atık ithalatı, geri dönüşüm kapasitesi ve kıyı kirliliği yeniden tartışılıyor. Meclis tutanaklarında yüksek ithalat hacmine dikkat çekilirken, denetim ve izlenebilirliğin güçlendirilmesi isteniyor.",
-      "image": "images/akdeniz-plastik.jpg",
-      "ready": true
-    },
-    {
-      "id": "sebahattin-sirin-gozalti",
-      "articleId": "sebahattin-sirin-gozalti",
+      "id": "yeni-parti-bbf1348",
+      "articleId": "yeni-parti-bbf1348",
       "category": "GÜNDEM",
-      "title": "ultrAslan lideri Sebahattin Şirin gözaltına alındı",
-      "spot": "İstanbul Cumhuriyet Başsavcılığı'nın yürüttüğü soruşturma kapsamında Sebahattin Şirin olarak bilinen Muzaffer Şirin gözaltına alındı.",
-      "image": "images/sebahattin-sirin.jpg",
+      "title": "Özgür Özel kürsüden indi; YENİ Parti vekilleri oylarını tek tek açıklıyor",
+      "spot": "YENİ Parti Genel Başkanı Özgür Özel’in milletvekillerinin seçim bölgelerindeki yurttaşların tutumuna göre oy kullanacağını açıklamasının ardından, şu ana kadar en az 31 milletvekili çerçeve yasaya ‘hayır’ diyeceğini duyurdu.",
+      "image": "images/radar-yeni-parti-bbf1348.png",
+      "ready": true
+    },
+    {
+      "id": "iyi-parti-bdc50ef",
+      "articleId": "iyi-parti-bdc50ef",
+      "category": "GÜNDEM",
+      "title": "Çerçeve yasa TBMM Genel Kurulu'nda görüşülüyor",
+      "spot": "\"Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun Teklifi\" TBMM Genel Kurulu'nda bugün görüşülüyor. MHP Başkan Yardımcısı Feti Yıldız, teklifin genel kuruldan nitelikli çoğunluk ile geçmesini beklediklerini söyledi.",
+      "image": "images/radar-iyi-parti-bdc50ef.jpg",
+      "ready": true
+    },
+    {
+      "id": "galatasaray-8a0208e",
+      "articleId": "galatasaray-8a0208e",
+      "category": "GÜNDEM",
+      "title": "Galatasaray'dan ayrılacağı konuşulurken Okan Buruk'un gözüne girdi! Yeni sözleşme imzalanıyor",
+      "spot": "Yaz transfer dönemini durgun geçiren Galatasaray, hücuma bir takviye yapmayı planlıyor. Birçok önemli isimle temas halinde sarı kırmızılılar, flaş bir yıldız için devreye girdi. Cimbom’un son saatlerde yaptığı bu hamleyi ise İtalyan medyası duyurdu. İşte detaylar... GS SPOR HABERİ",
+      "image": "images/radar-galatasaray-8a0208e.jpg",
       "ready": true
     }
   ],
-  "updateMode": "manual-safe-before-radar"
+  "updatedAt": "2026-08-10T17:33:30+00:00",
+  "updateMode": "radar-multisource"
 };

@@ -1,110 +1,41 @@
 {
-  "updatedAt": "2026-08-10T16:38:19+00:00",
-  "count": 10,
+  "updatedAt": "2026-08-10T17:33:30+00:00",
+  "count": 4,
   "items": [
     {
       "title": "Meclis'te tarihi oturum! Özgür Özel'in 'çerçeve yasa' konuşmasının tam metni...",
       "publishers": [
         "Cumhuriyet",
         "birgun.net",
-        "Sözcü Gazetesi",
-        "Bianet",
-        "onedio.com"
+        "Sözcü Gazetesi"
       ],
-      "image": "images/radar-ozgur-ozel-45227e9.jpg"
+      "image": "images/radar-ozgur-ozel-8b3ca8d.jpg"
     },
     {
-      "title": "YENİ Parti milletvekilleri 'çerçeve yasa' kararlarını bir bir açıklıyor: Kim ne dedi?",
+      "title": "Özgür Özel kürsüden indi; YENİ Parti vekilleri oylarını tek tek açıklıyor",
       "publishers": [
-        "Cumhuriyet",
         "Sözcü Gazetesi",
         "BBC",
-        "Bianet",
-        "Ekonomim"
+        "Bianet"
       ],
-      "image": "images/radar-yeni-parti-e1d5f2a.jpg"
+      "image": "images/radar-yeni-parti-bbf1348.png"
     },
     {
       "title": "Çerçeve yasa TBMM Genel Kurulu'nda görüşülüyor",
       "publishers": [
         "BBC",
         "Ekonomim",
-        "Bianet",
-        "instagram.com"
+        "Bianet"
       ],
-      "image": "images/radar-iyi-parti-dc21018.jpg"
+      "image": "images/radar-iyi-parti-bdc50ef.jpg"
     },
     {
       "title": "Galatasaray'dan ayrılacağı konuşulurken Okan Buruk'un gözüne girdi! Yeni sözleşme imzalanıyor",
       "publishers": [
         "NTVSpor",
-        "Fanatik",
-        "Fotomaç",
-        "Odatv",
-        "A Spor"
+        "Fotomaç"
       ],
-      "image": "images/radar-galatasaray-2376a4e.jpg"
-    },
-    {
-      "title": "house of the dragon",
-      "publishers": [
-        "Sinetopya",
-        "Beyazperde"
-      ],
-      "image": "images/radar-house-of-the-dragon-1cee109.jpg"
-    },
-    {
-      "title": "Beşiktaş'ta Dusan Vlahovic için Italiano devrede: Yapılan teklif ortaya çıktı",
-      "publishers": [
-        "evrensel.net",
-        "Fotomaç",
-        "Sporx.com",
-        "hurriyet.com.tr",
-        "goal.com",
-        "beinsports.com.tr"
-      ],
-      "image": "images/radar-dusan-vlahovic-9a40473.jpg"
-    },
-    {
-      "title": "Cumhurbaşkanı Erdoğan, Avusturya Şansölyesi Stocker ile ortak basın toplantısı düzenledi",
-      "publishers": [
-        "dha.com.tr",
-        "İhlas Haber Ajansı",
-        "Haber Dairesi"
-      ],
-      "image": "images/radar-recep-tayyip-erdogan-e94e7cf.jpg"
-    },
-    {
-      "title": "Galatasaray'dan ayrılacağı konuşulurken Okan Buruk'un gözüne girdi! Yeni sözleşme imzalanıyor",
-      "publishers": [
-        "NTVSpor",
-        "Yeniçağ Gazetesi",
-        "NationalTurk",
-        "Yeni Mesaj",
-        "Son Dakika",
-        "milliyet.com.tr"
-      ],
-      "image": "images/radar-okan-buruk-29c7b77.jpg"
-    },
-    {
-      "title": "Son dakika... Galatasaray muhabiri Burhan Can Terzi gözaltına alındı",
-      "publishers": [
-        "Sözcü Gazetesi",
-        "Cumhuriyet",
-        "Haberler"
-      ],
-      "image": "images/radar-burhan-can-terzi-e0420f2.png"
-    },
-    {
-      "title": "Dilek İmamoğlu'ndan çerçeve yasa öncesi dikkat çeken paylaşım",
-      "publishers": [
-        "birgun.net",
-        "Halk TV",
-        "Yeniçağ Gazetesi",
-        "NationalTurk",
-        "Notbir"
-      ],
-      "image": "images/radar-ekrem-imamoglu-20c9f09.jpg"
+      "image": "images/radar-galatasaray-8a0208e.jpg"
     }
   ]
 }
