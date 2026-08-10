@@ -6,13 +6,13 @@ on:
     - cron: "13,43 * * * *"
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 concurrency:
   group: gundem-defteri-live
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update-and-deploy:
@@ -25,8 +25,6 @@ jobs:
     steps:
       - name: Repo'yu al
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Python hazırla
         uses: actions/setup-python@v5
@@ -41,22 +39,7 @@ jobs:
         timeout-minutes: 5
         run: python -u RADAR_UPDATE.py
 
-      - name: Güncellenen veriyi repo'ya kaydet
-        if: success()
-        run: |
-          git config user.name "gundem-defteri-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add news.json data.js radar_state.json radar_preview.json images/ || true
-          if git diff --cached --quiet; then
-            echo "Repo içeriğinde değişiklik yok."
-          else
-            git commit -m "Otomatik gündem güncellemesi"
-            git pull --rebase origin main
-            git push origin main
-          fi
-
       - name: Pages için site klasörünü hazırla
-        if: success()
         run: |
           rm -rf _site
           mkdir -p _site
@@ -65,16 +48,13 @@ jobs:
           touch _site/.nojekyll
 
       - name: GitHub Pages'i yapılandır
-        if: success()
         uses: actions/configure-pages@v5
 
       - name: Site artifact'ını yükle
-        if: success()
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
       - name: GitHub Pages'e yayınla
-        if: success()
         id: deployment
         uses: actions/deploy-pages@v4
