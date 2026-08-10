@@ -1,0 +1,70 @@
+name: Gündem Defteri - 30 Dakika Güncelle ve Yayınla
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "13,43 * * * *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: gundem-defteri-live
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Repo'yu al
+        uses: actions/checkout@v4
+
+      - name: Python hazırla
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Ücretsiz bağımlılıkları kur
+        run: pip install -r requirements.txt
+
+      - name: Gündem radarı ve doğrulama
+        run: python RADAR_UPDATE.py
+
+      - name: Güncellenen veriyi repo'ya kaydet
+        run: |
+          git config user.name "gundem-defteri-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add news.json data.js radar_state.json radar_preview.json images/ || true
+          if git diff --cached --quiet; then
+            echo "Repo içeriğinde değişiklik yok."
+          else
+            git commit -m "Otomatik gündem güncellemesi"
+            git push
+          fi
+
+      - name: Pages için site klasörünü hazırla
+        run: |
+          rm -rf _site
+          mkdir -p _site
+          cp index.html article.html design-system.css home.js components.js data.js _site/
+          cp -r images _site/images
+          touch _site/.nojekyll
+
+      - name: GitHub Pages'i yapılandır
+        uses: actions/configure-pages@v5
+
+      - name: Site artifact'ını yükle
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: GitHub Pages'e yayınla
+        id: deployment
+        uses: actions/deploy-pages@v4
