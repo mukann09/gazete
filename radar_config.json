@@ -7,10 +7,10 @@
     "ceid": "TR:tr",
     "when": "1d"
   },
-  "radar_scan_limit": 22,
-  "publish_limit": 12,
+  "radar_scan_limit": 40,
+  "publish_limit": 20,
   "min_distinct_publishers": 2,
-  "max_news_results_per_topic": 4,
-  "max_age_hours": 30,
+  "max_news_results_per_topic": 5,
+  "max_age_hours": 36,
   "require_image": true
 }
