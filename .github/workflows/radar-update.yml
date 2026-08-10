@@ -61,7 +61,6 @@ jobs:
           Path('baseline.json').write_text(json.dumps(baseline,ensure_ascii=False,indent=2),encoding='utf-8')
           print('Taban:',source,'| haber:',len(baseline.get('feed',[])))
 
-          # Son başarılı canlı sitede kullanılan yerel görselleri yeni deploy için geri al.
           for item in baseline.get('feed',[]):
               rel=item.get('image','')
               if not rel.startswith('images/'):
@@ -73,7 +72,6 @@ jobs:
                   if len(data)>5000:
                       dest.write_bytes(data)
               except Exception:
-                  # Repo içinde zaten varsa onu koru.
                   pass
           PY
 
@@ -99,7 +97,6 @@ jobs:
           seen_ids=set()
           seen_titles=set()
 
-          # Önce bu turdaki yeni haberler, sonra önceki başarılı akış.
           for item in list(new.get('feed',[]))+list(old.get('feed',[])):
               aid=item.get('articleId') or item.get('id')
               nt=norm(item.get('title'))
@@ -113,7 +110,6 @@ jobs:
               if len(combined)>=20:
                   break
 
-          # Detay sayfaları için yeni makale sürümü eskisinin önüne geçer.
           article_map={}
           for art in old.get('articles',[]):
               if art.get('id'):
@@ -158,7 +154,7 @@ jobs:
         run: |
           rm -rf _site
           mkdir -p _site
-          cp index.html article.html design-system.css home.js components.js data.js _site/
+          cp index.html article.html design-system.css premium-detail.css home.js components.js data.js _site/
           cp -r images _site/images
           touch _site/.nojekyll
 
