@@ -1,0 +1,87 @@
+{
+  "image": {
+    "local_path": "C:/PATH/TO/article-photo.jpg",
+    "extension": "jpg"
+  },
+  "feed": {
+    "category": "GÜNDEM",
+    "title": "Ana sayfada görünecek doğal haber başlığı",
+    "spot": "Ana sayfada görünecek kısa ve doğal spot."
+  },
+  "article": {
+    "id": "ornek-haber-kimligi",
+    "category": "Gündem",
+    "date": "10 Ağustos 2026",
+    "title": "Haberin doğal başlığı",
+    "lead": "Haberin ilk paragrafı. Meta açıklama ya da geliştirme dili içermez.",
+    "hero": {
+      "src": "images/ornek-haber-kimligi.jpg",
+      "alt": "Fotoğrafın açıklayıcı alternatif metni",
+      "caption": "Fotoğraf kredisi ve lisans / kaynak bilgisi."
+    },
+    "sections": [
+      {
+        "type": "summary_cards",
+        "items": [
+          {
+            "label": "Ne oldu?",
+            "text": "Somut gelişme.",
+            "tone": "yellow"
+          },
+          {
+            "label": "Neden önemli?",
+            "text": "Gelişmenin önemi.",
+            "tone": "green"
+          },
+          {
+            "label": "Bilinmeyen ne?",
+            "text": "Henüz netleşmeyen nokta.",
+            "tone": "blue"
+          }
+        ]
+      },
+      {
+        "type": "highlight_paragraph",
+        "heading": "Gelişmenin ayrıntıları",
+        "paragraphs": [
+          {
+            "text": "Doğal haber paragrafı burada yer alır.",
+            "highlights": [
+              {
+                "text": "Doğal haber paragrafı",
+                "color": "yellow"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flow",
+        "heading": "Zaman çizgisi",
+        "items": [
+          {
+            "text": "İlk gelişme",
+            "tone": "blue"
+          },
+          {
+            "text": "İkinci gelişme",
+            "tone": "yellow"
+          },
+          {
+            "text": "Son durum",
+            "tone": "green"
+          }
+        ]
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "label": "Birincil / güvenilir kaynak",
+            "url": "https://example.com/source"
+          }
+        ]
+      }
+    ]
+  }
+}

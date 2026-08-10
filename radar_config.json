@@ -1,0 +1,16 @@
+{
+  "radar_url": "https://eksisozluk.com/basliklar/gundem",
+  "google_news": {
+    "base": "https://news.google.com/rss/search",
+    "hl": "tr",
+    "gl": "TR",
+    "ceid": "TR:tr",
+    "when": "1d"
+  },
+  "radar_scan_limit": 50,
+  "publish_limit": 20,
+  "min_distinct_publishers": 2,
+  "max_news_results_per_topic": 6,
+  "max_age_hours": 30,
+  "require_image": true
+}

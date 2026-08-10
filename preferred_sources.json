@@ -1,0 +1,25 @@
+{
+  "preferred_publishers": [
+    "Diken",
+    "T24",
+    "Medyascope",
+    "BirGün",
+    "Cumhuriyet",
+    "Sözcü",
+    "Halk TV",
+    "NTV",
+    "Euronews Türkçe"
+  ],
+  "preferred_domains": [
+    "diken.com.tr",
+    "t24.com.tr",
+    "medyascope.tv",
+    "birgun.net",
+    "cumhuriyet.com.tr",
+    "sozcu.com.tr",
+    "halktv.com.tr",
+    "ntv.com.tr",
+    "tr.euronews.com"
+  ],
+  "note": "Bu liste yalnız sıralama önceliğidir. Kara liste dışındaki diğer kaynaklar da kullanılabilir."
+}

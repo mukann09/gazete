@@ -1,0 +1,26 @@
+{
+  "blocked_domains": [
+    "trthaber.com",
+    "aa.com.tr",
+    "ahaber.com.tr",
+    "sabah.com.tr",
+    "takvim.com.tr",
+    "yenisafak.com",
+    "haber7.com",
+    "turkiyegazetesi.com.tr",
+    "aksam.com.tr"
+  ],
+  "blocked_publishers": [
+    "TRT Haber",
+    "Anadolu Ajansı",
+    "AA",
+    "A Haber",
+    "Sabah",
+    "Takvim",
+    "Yeni Şafak",
+    "Haber7",
+    "Türkiye Gazetesi",
+    "Akşam"
+  ],
+  "note": "Bu liste kullanıcı kaynak tercihini uygular. Bu kaynaklar doğrulama, kaynak sayımı, metin veya görsel için kullanılmaz."
+}

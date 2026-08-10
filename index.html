@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Gündem Defteri</title>
+  <link rel="stylesheet" href="design-system.css">
+</head>
+<body class="home-body">
+  <header class="home-header">
+    <div class="home-header-inner">
+      <div class="home-brand-block">
+        <a class="home-logo" href="index.html">Gündem Defteri <small style="font-size:10px;color:#888;font-weight:700">V18</small></a>
+        <div id="homeUpdated" style="font-size:11px;color:#7a7a7a;margin-top:3px"></div>
+      </div>
+      <nav class="home-nav">
+        <a href="#">Manşetler</a>
+        <a href="#">Gündem</a>
+        <a href="#">Eğitim</a>
+        <a href="#">Ekonomi</a>
+        <a href="#">Çevre</a>
+        <a href="#">Analiz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="home-shell">
+    <section class="home-slider" id="homeSlider" aria-live="polite">
+      <div id="homeSlides"></div>
+
+      <div class="home-bottom">
+        <div id="homePager" class="home-pager"></div>
+        <div class="home-drag-hint">fotoğrafı fareyle sürükle / mobilde kaydır</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>
