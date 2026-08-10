@@ -39,6 +39,18 @@ jobs:
         timeout-minutes: 5
         run: python -u RADAR_UPDATE.py
 
+      - name: Boş akışı engelle
+        run: |
+          python - <<'PY'
+          import json, sys
+          d=json.load(open('news.json',encoding='utf-8'))
+          n=len(d.get('feed',[]))
+          print('Yayınlanabilir haber sayısı:', n)
+          if n == 0:
+              print('Boş akış bulundu; mevcut canlı site korunacak.')
+              sys.exit(1)
+          PY
+
       - name: Pages için site klasörünü hazırla
         run: |
           rm -rf _site
