@@ -7,6 +7,7 @@ import hashlib
 import html
 import json
 import re
+import signal
 import time
 import urllib.parse
 import urllib.request
@@ -42,6 +43,17 @@ PREVIEW = ROOT / "radar_preview.json"
 ERRORS = ROOT / "radar_last_errors.txt"
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/127 Safari/537.36"
+
+RUN_DEADLINE_SECONDS = 210
+PER_DECODE_SECONDS = 7
+PER_HTTP_SECONDS = 9
+
+class DecodeTimeout(Exception):
+    pass
+
+def _alarm_handler(signum, frame):
+    raise DecodeTimeout("decode timeout")
+
 
 # Deliberately conservative: the radar contains many conversational / lifestyle topics
 # that are not news stories. These are excluded before verification.
@@ -206,7 +218,7 @@ def image_probe(url):
     Returns None for invalid or tiny images.
     """
     try:
-        raw, final, ctype = request(url, timeout=20)
+        raw, final, ctype = request(url, timeout=PER_HTTP_SECONDS)
     except Exception:
         return None
     if ctype and not ctype.startswith("image/"):
@@ -255,7 +267,7 @@ def best_image_from_candidates(candidates):
         if (best is None) or (score > best["score"]):
             best = probe
     return best
-def request(url, timeout=25, accept=None):
+def request(url, timeout=PER_HTTP_SECONDS, accept=None):
     headers={
         "User-Agent":UA,
         "Accept-Language":"tr-TR,tr;q=0.9,en;q=0.5",
@@ -383,14 +395,32 @@ def distinct_publishers(results):
     return seen
 
 def decode_google_url(url):
+    """Decode Google News URL with a strict per-item time limit on Unix runners."""
     host=urllib.parse.urlparse(url).netloc.lower()
-    if 'news.google.com' not in host: return url
+    if "news.google.com" not in host:
+        return url
+
+    old_handler = None
+    can_alarm = hasattr(signal, "SIGALRM")
     try:
-        result=gnewsdecoder(url, interval=0.25)
-        if result and result.get('status') and result.get('decoded_url'):
-            decoded=result['decoded_url']; dhost=urllib.parse.urlparse(decoded).netloc.lower()
-            if dhost and 'google' not in dhost: return decoded
-    except Exception: pass
+        if can_alarm:
+            old_handler = signal.signal(signal.SIGALRM, _alarm_handler)
+            signal.alarm(PER_DECODE_SECONDS)
+
+        result=gnewsdecoder(url, interval=0.15)
+
+        if result and result.get("status") and result.get("decoded_url"):
+            decoded=result["decoded_url"]
+            dhost=urllib.parse.urlparse(decoded).netloc.lower()
+            if dhost and "google" not in dhost:
+                return decoded
+    except (DecodeTimeout, Exception):
+        return None
+    finally:
+        if can_alarm:
+            signal.alarm(0)
+            if old_handler is not None:
+                signal.signal(signal.SIGALRM, old_handler)
     return None
 
 def resolve_article_meta(google_url):
@@ -398,7 +428,7 @@ def resolve_article_meta(google_url):
     if not publisher_url: return None
     phost=urllib.parse.urlparse(publisher_url).netloc.lower()
     if not phost or 'google' in phost: return None
-    try: raw,final,ctype=request(publisher_url,timeout=20)
+    try: raw,final,ctype=request(publisher_url,timeout=PER_HTTP_SECONDS)
     except Exception: return None
     final_host=urllib.parse.urlparse(final).netloc.lower()
     if not final_host or 'google' in final_host: return None
@@ -769,21 +799,26 @@ def main():
 
     verified=[]
     errors=[]
+    started=time.monotonic()
     for idx,topic in enumerate(radar,1):
+        elapsed=time.monotonic()-started
+        if elapsed >= RUN_DEADLINE_SECONDS:
+            print(f"Süre sınırına ulaşıldı ({int(elapsed)} sn). Bulunan haberlerle devam ediliyor.")
+            break
         if len(verified)>=cfg["publish_limit"]:
             break
-        print(f"[{idx:02d}/{len(radar):02d}] {topic['radar_title'][:72]}")
+
+        print(f"[{idx:02d}/{len(radar):02d}] {topic['radar_title'][:72]}", flush=True)
         try:
             article=verify_topic(topic,cfg,cutoff)
             if not article:
-                print("    elendi: 2 kaynak/güncellik/görsel koşulunu geçmedi")
+                print("    elendi", flush=True)
                 continue
             verified.append(article)
-            print(f"    KABUL: {article['verification']['publisherCount']} yayın")
+            print(f"    KABUL: {article['verification']['publisherCount']} yayın", flush=True)
         except Exception as e:
             errors.append(f"{topic['radar_title']}: {e}")
-            print("    hata:",e)
-        time.sleep(0.2)
+            print("    hata:",e, flush=True)
 
     if not verified:
         print()
@@ -857,7 +892,7 @@ def main():
     },ensure_ascii=False,indent=2),encoding="utf-8")
 
     print()
-    print(f"BAŞARILI: {len(feed)} doğrulanmış konu ana sayfaya yazıldı.")
+    print(f"BAŞARILI: {len(feed)} doğrulanmış konu ana sayfaya yazıldı. Süre: {int(time.monotonic()-started)} sn.")
     for i,a in enumerate(verified,1):
         print(f"{i:02d}. {a['title']} [{a['verification']['publisherCount']} yayın]")
 
