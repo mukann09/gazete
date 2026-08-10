@@ -75,9 +75,9 @@ jobs:
                   pass
           PY
 
-      - name: Gündem radarı ve doğrulama
+      - name: Çok kaynaklı gündem radarı ve doğrulama
         timeout-minutes: 5
-        run: python -u RADAR_UPDATE.py
+        run: python -u RUN_RADAR.py
 
       - name: Yeni haberleri son başarılı akışla birleştir
         run: |
