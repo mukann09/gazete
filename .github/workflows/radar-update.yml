@@ -35,9 +35,113 @@ jobs:
       - name: Ücretsiz bağımlılıkları kur
         run: pip install -r requirements.txt
 
+      - name: Son başarılı canlı akışı al
+        run: |
+          python - <<'PY'
+          import json, re, urllib.request
+          from pathlib import Path
+          from urllib.parse import urljoin
+
+          base='https://mukann09.github.io/gazete/'
+          repo=json.load(open('news.json',encoding='utf-8'))
+          baseline=repo
+          source='repo'
+
+          try:
+              raw=urllib.request.urlopen(base+'data.js',timeout=12).read().decode('utf-8','replace')
+              m=re.search(r'window\.NEWS_DATA\s*=\s*(\{.*\})\s*;?\s*$',raw,re.S)
+              if m:
+                  live=json.loads(m.group(1))
+                  if live.get('feed'):
+                      baseline=live
+                      source='canlı site'
+          except Exception as e:
+              print('Canlı veri alınamadı, repo tabanı kullanılacak:',e)
+
+          Path('baseline.json').write_text(json.dumps(baseline,ensure_ascii=False,indent=2),encoding='utf-8')
+          print('Taban:',source,'| haber:',len(baseline.get('feed',[])))
+
+          # Son başarılı canlı sitede kullanılan yerel görselleri yeni deploy için geri al.
+          for item in baseline.get('feed',[]):
+              rel=item.get('image','')
+              if not rel.startswith('images/'):
+                  continue
+              dest=Path(rel)
+              dest.parent.mkdir(parents=True,exist_ok=True)
+              try:
+                  data=urllib.request.urlopen(urljoin(base,rel),timeout=12).read()
+                  if len(data)>5000:
+                      dest.write_bytes(data)
+              except Exception:
+                  # Repo içinde zaten varsa onu koru.
+                  pass
+          PY
+
       - name: Gündem radarı ve doğrulama
         timeout-minutes: 5
         run: python -u RADAR_UPDATE.py
+
+      - name: Yeni haberleri son başarılı akışla birleştir
+        run: |
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+
+          new=json.load(open('news.json',encoding='utf-8'))
+          old=json.load(open('baseline.json',encoding='utf-8'))
+
+          def norm(s):
+              s=(s or '').lower()
+              s=re.sub(r'[^a-z0-9çğıöşü]+',' ',s)
+              return ' '.join(s.split())
+
+          combined=[]
+          seen_ids=set()
+          seen_titles=set()
+
+          # Önce bu turdaki yeni haberler, sonra önceki başarılı akış.
+          for item in list(new.get('feed',[]))+list(old.get('feed',[])):
+              aid=item.get('articleId') or item.get('id')
+              nt=norm(item.get('title'))
+              if not aid or not nt:
+                  continue
+              if aid in seen_ids or nt in seen_titles:
+                  continue
+              seen_ids.add(aid)
+              seen_titles.add(nt)
+              combined.append(item)
+              if len(combined)>=20:
+                  break
+
+          # Detay sayfaları için yeni makale sürümü eskisinin önüne geçer.
+          article_map={}
+          for art in old.get('articles',[]):
+              if art.get('id'):
+                  article_map[art['id']]=art
+          for art in new.get('articles',[]):
+              if art.get('id'):
+                  article_map[art['id']]=art
+
+          articles=[]
+          for item in combined:
+              aid=item.get('articleId') or item.get('id')
+              if aid in article_map:
+                  articles.append(article_map[aid])
+
+          if not combined:
+              raise SystemExit('Ne yeni ne de eski yayınlanabilir haber var; deploy iptal.')
+
+          merged={
+              'articles':articles,
+              'feed':combined,
+              'updatedAt':new.get('updatedAt') or old.get('updatedAt'),
+              'updateMode':'radar-reservoir-20'
+          }
+          text=json.dumps(merged,ensure_ascii=False,indent=2)
+          Path('news.json').write_text(text,encoding='utf-8')
+          Path('data.js').write_text('window.NEWS_DATA = '+text+';\n',encoding='utf-8')
+          print('Yeni tur:',len(new.get('feed',[])),'| Önceki:',len(old.get('feed',[])),'| Yayın:',len(combined))
+          PY
 
       - name: Boş akışı engelle
         run: |
@@ -45,9 +149,8 @@ jobs:
           import json, sys
           d=json.load(open('news.json',encoding='utf-8'))
           n=len(d.get('feed',[]))
-          print('Yayınlanabilir haber sayısı:', n)
-          if n == 0:
-              print('Boş akış bulundu; mevcut canlı site korunacak.')
+          print('Yayınlanabilir haber sayısı:',n)
+          if n==0:
               sys.exit(1)
           PY
 
