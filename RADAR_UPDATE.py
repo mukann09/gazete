@@ -19,10 +19,10 @@ from pathlib import Path
 
 try:
     from googlenewsdecoder import gnewsdecoder
-except ImportError:
-    print("HATA: googlenewsdecoder paketi kurulu değil.")
-    print("RADAR_UPDATE.bat dosyasını çalıştırın; paket otomatik kurulacaktır.")
-    raise SystemExit(1)
+except ImportError as exc:
+    print(f"HATA: googlenewsdecoder yüklenemedi: {exc}")
+    print("Bağımlılıkları aynı Python ile kurun: python -m pip install -r requirements.txt")
+    raise SystemExit(1) from exc
 
 try:
     from PIL import Image
