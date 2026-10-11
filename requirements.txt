@@ -1,2 +1,4 @@
 Pillow>=10.0.0
 googlenewsdecoder==0.1.7
+# googlenewsdecoder 0.1.7 uses the Modest parser removed in selectolax 1.0.
+selectolax>=0.3.27,<1.0
